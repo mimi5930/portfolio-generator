@@ -129,7 +129,6 @@ Add a New Project
 promptUser()
   .then(promptProject)
   .then(portfolioData => {
-    console.log(portfolioData);
     const pageHTML = generatePage(portfolioData);
 
     fs.writeFile('./index.html', pageHTML, err => {
